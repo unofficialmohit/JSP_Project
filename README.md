@@ -5,6 +5,6 @@ after successful selection , all the records belong to that company and year app
 on selecting a user from list, we can see the overall information about that specific user.
 
 SOFTWARES USED :
-Appache NetBeans 12.2 
-Derby 10.0.1
-Tomcat 9.0.1
+Appache NetBeans 12.2 ,
+Derby 10.0.1 ,
+Tomcat 9.0.1 .
