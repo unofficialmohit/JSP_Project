@@ -1,4 +1,11 @@
 <%@page import="java.util.Date,java.text.SimpleDateFormat,java.sql.*" %>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Login Page</title>
+<link rel="stylesheet" type"text/css" href="style.css">
+</head>
+<body>    
 <%
 SimpleDateFormat df=new SimpleDateFormat("ddMMyyyy");
 Date d=new Date();
@@ -25,24 +32,25 @@ isallow=true;
 ResultSet r1=stmt.executeQuery("select * from cname");
 if(isallow==true)
 {%>
-<form action="resultpage.jsp">
+<form action="resultpage.jsp" method="POST">
 <label for="comp">Company</label>
 <select name="companies" id="comp">
 <%while(r1.next())
 {%>
 <option value="<%=r1.getString("compname")%>"><%=r1.getString("compname")%></option>
 <%}%>
-</select>
+</select><br>
 <br>
 <label for="syear">Year</label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <select name="syear" id="syr"> 
 <%ResultSet r2=stmt.executeQuery("select * from cyear");
 while(r2.next()){%>
 <option value="<%=r2.getString("yearvalue")%>"><%=r2.getString("yearvalue")%></option>
 <%}%>
-</select>
+</select><br><br>
 <br>
-<input type="submit" value="Submit" />
+<button type="submit"/>Submit</button>
 </form>
 <%}
 else
@@ -58,3 +66,5 @@ out.println(ae);
 
 
 %>
+</body>
+</html>

@@ -19,15 +19,15 @@
             Statement statement=connection.createStatement();
             ResultSet resultset=statement.executeQuery("select * from compdata where cname='"+comp+"' and yearr='"+syear+"'");
 %>
-<form action="user_profile.jsp" style="padding-right:4%;padding-left:4%;">
-    <div class="set">
-    <%
+<form action="user_profile.jsp">
+<select name="result" id="result"> 
+<%
             while(resultset.next())
             {%> 
-            <input type="radio" name="result" value="<%=resultset.getInt(("id"))%>"><%=resultset.getInt(("id"))+"----------------------> "+resultset.getString(("sname"))%><br>
+            <option value="<%=resultset.getInt(("id"))%>"><%=resultset.getInt(("id"))+"----------------------> "+resultset.getString(("sname"))%></option>
             <%}%>
-    </div>
-            &nbsp;&nbsp;<button type="submit">Submit</button>
+</select>
+            <input type="submit" value="Submit" />
             </form>
 <%
        connection.close();

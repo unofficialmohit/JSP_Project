@@ -1,4 +1,12 @@
 <%@page import="java.sql.*" %>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Login Page</title>
+<link rel="stylesheet" type"text/css" href="style.css">
+</head>
+<body> 
+    <div class="set1">
 <% 
 String result=request.getParameter("result");
      String url="jdbc:derby://localhost:1527/mohit0001";
@@ -29,3 +37,7 @@ String result=request.getParameter("result");
         }
 
 %>
+    </div>
+    <!--<button onclick="location.href='indexpage.jsp'">Search Another Result</button>-->
+</body>
+</html>

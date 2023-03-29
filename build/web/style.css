@@ -1,0 +1,71 @@
+input[type=text] ,input[type=password]{
+    width: 60%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+    margin-left: 20px;
+  }
+  input[type=text]:focus,input[type=password]:focus {
+    width: 65%;
+  }
+  form{
+    padding-left: 8%;
+padding-right: 5%;
+    padding-bottom: 5%;
+    margin-left: 30%;
+    padding-top: 5%;
+    border:rgb(223, 149, 20); 
+    border-width:5px; 
+    border-style:solid;
+    margin-right:30%;
+    margin-top:8%;
+    margin-bottom:15%;
+
+}
+button{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(0, 8, 20);
+    cursor: pointer;
+    text-decoration: none;
+    padding: 9px 25px;
+    border:solid;
+    border-radius: 8px;
+
+}
+button:hover{
+    background-color:rgb(34, 34, 60);  
+    color: white;
+}
+select{
+    width:200px;
+    height:60px;
+    margin-left: 60px;
+    text-align: center;
+    font-size: 20px;
+}
+ .set{
+padding:40px;
+font-size: 20px;
+border:1px solid black;
+margin-bottom:10px;
+margin-left: 10px;
+margin-right:10px;
+margin-top: 10px;
+  }
+  .set1{
+padding:100px;
+font-size: 40px;
+border:1px solid black;
+margin-bottom:10px;
+margin-left: 300px;
+margin-right:300px;
+margin-top: 50px;
+padding-left: 200px;
+  }
