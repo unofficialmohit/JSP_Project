@@ -50,7 +50,11 @@ while(r2.next()){%>
 <%}%>
 </select><br><br>
 <br>
-<button type="submit"/>Submit</button>
+<button type="submit"/>Search</button>
+</form>
+<form style="padding-left: 13%;margin-top:1%;" action='add.jsp'>
+    <h1> Add More Data :</h1>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button " value="signup" onclick=window.location.href='add.jsp'>Add Records</button>
 </form>
 <%}
 else
